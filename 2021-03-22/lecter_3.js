@@ -1,5 +1,16 @@
-//실행된 파일의 주소와 이름 출력
-console.log('filename', __filename);
+/*
 
-//실행된 파일의 주소 출력
-console.log('dirname', __dirname);
+    전역 변수
+
+    웹 브라우저에서 동작하는 JS의 최상위 객체는 window 객체.
+    window 객체는 웹 브라우저 자체와 관련된 속성과 메소드를 가지고 있지만, 웹 브라우저에서 작동하는 것이 아니기에 window객체가 존재하지 않습니다.
+
+    대신에, 전역 변수와 전역 함수를 가지고 있습니다. 이번 파일에서는 node.js의 전역 변수를 사용해 봅니다.
+
+*/
+
+// 현재 실행중인 코드의 파일 경로와 이름을 같이 출력합니다.
+console.log('filename : ', __filename);
+
+// 현재 실행중인 코드의 파일 경로를 출력합니다.
+console.log('dirname : ', __dirname);
